@@ -1,0 +1,19 @@
+{
+  "name": "coffeelintmate",
+  "version": "0.1.0",
+  "author": "Luke Hagan <lukehagan.com>",
+  "description": "CoffeeLint Textmate bundle",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lhagan/coffeelintmate.git"
+  },
+  "dependencies" : {
+    "coffee-script":  "*",
+    "coffeelint" :  "*",
+    "jade" :  "*"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8"
+  }
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/usr/bin/env coffee
+
+supportpath = process.env.TM_BUNDLE_SUPPORT
+filepath = process.env.TM_FILEPATH
+cslintmate = require("#{supportpath}/main.coffee")
+fs = require("fs")
+
+args =
+  filepath: filepath
+  content: fs.readFileSync(filepath, 'utf8').toString()
+  style: fs.readFileSync("#{supportpath}/main.css", "utf8").toString()
+  script: fs.readFileSync("#{supportpath}/main.js", "utf8").toString()
+  template: fs.readFileSync("#{supportpath}/template.jade", "utf8").toString()
+
+cslintmate.main(args)</string>
+	<key>input</key>
+	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^l</string>
+	<key>name</key>
+	<string>Run CoffeeLintMate</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>scope</key>
+	<string>source.coffee</string>
+	<key>uuid</key>
+	<string>D2DF0D57-CD45-46DA-9788-0E7680142B33</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

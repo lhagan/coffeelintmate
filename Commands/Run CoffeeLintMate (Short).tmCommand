@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/usr/bin/env coffee
+
+supportpath = process.env.TM_BUNDLE_SUPPORT
+filepath = process.env.TM_FILEPATH
+cslintmate = require("#{supportpath}/main.coffee")
+fs = require("fs")
+
+if filepath
+  args =
+    filepath: filepath
+    content: fs.readFileSync(filepath, 'utf8').toString()
+    short: true
+
+  cslintmate.main(args)</string>
+	<key>input</key>
+	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>@s</string>
+	<key>name</key>
+	<string>Run CoffeeLintMate (Short)</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
+	<key>scope</key>
+	<string>source.coffee</string>
+	<key>uuid</key>
+	<string>965D1039-4045-4533-B7F1-57732F2482DA</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

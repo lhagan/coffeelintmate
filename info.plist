@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>yhxruntna.pbz</string>
+	<key>contactName</key>
+	<string>Luke Hagan</string>
+	<key>description</key>
+	<string>Add support for the CoffeeScript style checker, &lt;a href="http://www.coffeelint.org/"&gt;CoffeeLint. Based heavily on JSLintMate by &lt;a href="http://rondevera.github.com/jslintmate/"&gt;Ron DeVera&lt;/a&gt;. </string>
+	<key>name</key>
+	<string>CoffeeLintMate</string>
+  <key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>D2DF0D57-CD45-46DA-9788-0E7680142B33</string>
+			<string>965D1039-4045-4533-B7F1-57732F2482DA</string>
+			<string>------------------------------------</string>
+			<string>9CF0E918-E16E-4CE5-99CC-ADD133FC95E7</string>
+			<string>------------------------------------</string>
+			<string>065D4165-1297-4519-9AC6-22E19FC5257C</string>
+		</array>
+	</dict>
+	<key>uuid</key>
+	<string>FCC0ABB1-F34D-44AA-91B7-E703F05D47CE</string>
+</dict>
+</plist>

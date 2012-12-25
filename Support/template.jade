@@ -1,0 +1,35 @@
+!!! 5
+html
+  head
+    meta(charset='utf-8')
+    title CoffeeLintMate
+    //- insert styles from args
+    style !{style}
+  body
+    header
+      .info.has-filepath
+        if errors.length > 0
+          - var problems = (errors.length > 1) ? 'problems':'problem'
+          span.desc CoffeeLintMate found #{errors.length} #{problems}:
+        else
+          span.desc Lint-free!
+          
+        span.filepath #{filepath}
+        a.info(href='http://rondevera.github.com/jslintmate/', title='About JSLintMate 1.4') info
+    
+    if errors.length > 0
+      .results.results-problems
+        ul.problems        
+          for err in errors
+            li
+              a(href='txmt://open?url=#{filepath}&line=#{err.lineNumber}')
+                span.location Line #{err.lineNumber}
+                span.desc #{err.message}
+                pre !{err.line}
+    
+    else
+      .results.results-success
+        p.success Lint-free!
+        
+    //- insert unescaped javascript from args
+    script !{script}
