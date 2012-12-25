@@ -5,9 +5,9 @@ Quick, simple **CoffeeLint in TextMate**.
 
 *What are these things?* [CoffeeLint](http://www.coffeelint.org) is a style checker
 that helps keep CoffeeScript code clean and consistent. CoffeeLintMate brings this
-functionality to TextMate, displaying issues in a nicely formatted (thanks 
-to [JSLintMate](http://rondevera.github.com/jslintmate/)) panel. It'll also check to
-make sure you code compiles.
+functionality to [TextMate](https://github.com/textmate/textmate), displaying issues 
+in a nicely formatted (thanks to [JSLintMate](http://rondevera.github.com/jslintmate/)) 
+panel. It'll also check to make sure your code compiles.
 
 Key features
 ----------
@@ -26,9 +26,8 @@ if you're interested in this bundle).
 In Terminal:
 
 ```shell
-TARGET=~/Library/Application\ Support/Avian/Pristine\ Copy/Bundles/
-mkdir -p $TARGET
-cd $TARGET
+mkdir -p ~/Library/Application\ Support/Avian/Pristine\ Copy/Bundles/
+cd ~/Library/Application\ Support/Avian/Pristine\ Copy/Bundles/
 git clone git://github.com/lhagan/coffeelintmate.git CoffeeLintMate.tmbundle
 cd CoffeeLintMate.tmbundle
 npm install
