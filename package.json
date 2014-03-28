@@ -10,7 +10,7 @@
   "dependencies" : {
     "coffee-script":  "*",
     "coffeelint" :  "*",
-    "jade" :  "*"
+    "jade" :  "1.3.0"
   },
   "license": "MIT",
   "engines": {
