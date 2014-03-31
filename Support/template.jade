@@ -22,7 +22,7 @@ html
         ul.problems        
           for err in errors
             li
-              a(href='txmt://open?url=#{filepath}&line=#{err.lineNumber}')
+              a(href='txmt://open?url=file://#{filepath}&line=#{err.lineNumber}')
                 span.location Line #{err.lineNumber}
                 span.desc #{err.message}
                 pre !{err.line}
